@@ -18,23 +18,6 @@ void displayScores(float scores[], int numStudents) {
     }
 }
 
-// Function to sort scores from highest to lowest(Descending)
-void sortScoresDescending(float scores[], int numStudents) {
-    // using Bubble Sort to arrange scores in descending order for the class
-    for (int i = 0; i < numStudents - 1; i++) {
-        for (int j = 0; j < numStudents - i - 1; j++) {
-            if (scores[j] < scores[j + 1]) {
-                // Swap scores if they are in the wrong order
-                float temp = scores[j];
-                scores[j] = scores[j + 1];
-                scores[j + 1] = temp;
-            }
-        }
-    }
-    // Display sorted scores
-    cout << "\nSorted scores (highest to lowest):\n";
-    displayScores(scores, numStudents); // Reusing display function to show the sorted scores
-}
 
 // Function to search for a specific score given by the user
 void searchScore(float scores[], int numStudents) {
