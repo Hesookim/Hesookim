@@ -10,7 +10,7 @@ struct Book {
     string name;
     string author;
     int year;
-    string ISBN; // ISBN for the book (its uniqeu)
+    string ISBN; // ISBN for the book (its unique)
     int copies;// number of available copies of the book
 };
 
